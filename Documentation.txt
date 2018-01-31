@@ -1,0 +1,44 @@
+# David KONAM && Paul JEANNOT
+# DOCUMENTATION
+
+## EXECUTION
+Pour lancer le système expert, il faut mettre le chemin absolu vers le dossier Hackinator dans la variable *chemin* en début de jeu.lisp.
+Exemple : "C:/Users/Davy/Documents/UTC/IA01/HAKINATOR_V2/"
+
+## MODES DE JEU
+Le mode de jeu lors de la démonstration correspond au mode de jeu n°1
+Le deuxieme est la recherche à partir d'un nom de logiciel
+Les deux derniers modes sont des exemples de parcours en profondeur et en largeur.
+
+## Fichiers
+jeu.lisp : lanceur
+parametres.lisp : domaine de définitions
+règles.lisp : regles
+moteurregles.lisp : moteur inférence + fonction de service de règles
+moteurfaits.lisp : fonctions de service des faits
+gestionsparametre.lisp : fonctions de service des parametres
+sauvegarde.lisp : génération dynamique des règles
+constantes.lisp : variables globales
+
+## Test : chercher word
+entrer les informations suivantes dans les questions
+nom = word 
+utilisateur = tout_public 
+editeur = microsoft 
+annee >= 1989
+type = application 
+theme = bureautique 
+documentation = exhaustive 
+prise_en_main = facile 
+communaute_utilisateur = importante 
+communaute_developpeurs != inactive
+communaute_developpeurs != active 
+fonction = traitement_texte 
+modification_autorise = non
+copie_autorise = non
+code_source_disponible = non
+revente_autorise = non
+protege_droit_auteur = oui
+gratuit = non
+
+!= signifie différent
